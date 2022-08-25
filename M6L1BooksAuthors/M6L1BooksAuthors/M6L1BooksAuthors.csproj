@@ -26,4 +26,9 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.3.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\M6L1BooksAuthors.Core\M6L1BooksAuthors.Core.csproj" />
+    <ProjectReference Include="..\M6L1BooksAuthors.Infrastructure\M6L1BooksAuthors.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>
