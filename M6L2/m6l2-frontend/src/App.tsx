@@ -1,26 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {useEffect, useState} from 'react';
+import Header from "./components/Header";
+import BookList from "./components/BookList";
+import {GetBooks} from "./fetch";
+import {IBook} from "./interfaces/IBook";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+
+    const [books, setBooks] = useState<IBook[]>([])
+
+    useEffect(() => {
+        const fetchProductsData = async () => {
+            const res = await GetBooks();
+            setBooks(res);
+        }
+        fetchProductsData();
+    }, [])
+
+    return (
+        <div>
+            <Header/>
+            {books.length > 0 ? <BookList books={books}/> : ''}
+        </div>
+    );
+};
 
 export default App;

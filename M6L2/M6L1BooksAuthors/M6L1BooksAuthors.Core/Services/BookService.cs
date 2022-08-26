@@ -84,7 +84,7 @@ namespace M6L1BooksAuthors.Core.Services
             {
                 try
                 {
-                    Book book = await _context.Books.Include(u => u.BooksAuthors).Where(i => i.BookId == id).FirstOrDefaultAsync();
+                    Book book = await _context.Books.Include(u => u.BooksAuthors).ThenInclude(i => i.Author).Where(i => i.BookId == id).FirstOrDefaultAsync();
                     if (book != null)
                     {
                         return book;
@@ -106,7 +106,7 @@ namespace M6L1BooksAuthors.Core.Services
             {
                 try
                 {
-                    List<Book> books = await _context.Books.Include(u => u.BooksAuthors).ToListAsync();
+                    List<Book> books = await _context.Books.Include(u => u.BooksAuthors).ThenInclude(i => i.Author).ToListAsync();
                     return books;
                 }
                 catch (Exception)
