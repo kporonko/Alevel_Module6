@@ -51,3 +51,19 @@ export const updateBook = async (id: string, title: string, description: string)
 
     const response = await fetch(`https://localhost:7245/Books/book`, requestOptions);
 }
+
+interface addBookAuthors{
+    lastName: string,
+    firstName: string,
+    contribution: string,
+    birthday: Date
+}
+export const addBook = async (title: string, releaseYear: number, description: string, authors: addBookAuthors[]) => {
+    const requestOptions = {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ title: title, description: description, releaseYear: releaseYear, authors : authors})
+    };
+    console.log(requestOptions.body)
+    const response = await fetch(`https://localhost:7245/Books/book`, requestOptions);
+}

@@ -5,6 +5,7 @@ import {DeleteBook, GetBooks} from "./fetch";
 import {IBook} from "./interfaces/IBook";
 import {Route, Routes} from "react-router-dom";
 import BookDescription from "./components/BookDescription";
+import AddBook from "./components/AddBook";
 
 const App = () => {
 
@@ -19,10 +20,8 @@ const App = () => {
     }, [])
 
     async function deleteBook(id: number){
-        console.log('id')
-        console.log(id)
         await DeleteBook(id);
-        window.location.reload();
+        await window.location.reload();
     }
 
     return (
@@ -31,7 +30,7 @@ const App = () => {
             <Routes>
                 <Route path='/' element={books.length > 0 ? <BookList onDelete={deleteBook} books={books}/> : ''}/>
                 <Route path="/book/:id" element={<BookDescription/>} />
-                <Route path="/addBook" element={<div>add</div>} />
+                <Route path="/addBook" element={<AddBook/>} />
             </Routes>
 
         </div>

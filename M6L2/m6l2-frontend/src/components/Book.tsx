@@ -11,7 +11,11 @@ const Book = (props: {book: IBook, onDelete: any}) => {
                 <div>{props.book.releaseYear}</div>
                 <div>{props.book.booksAuthors.map(author => (<div key={author.author.authorId}>{author.author.firstName} {author.author.lastName}</div>))}</div>
             </div>
-            <button onClick={() => props.onDelete(props.book.bookId)} className="my-button">Delete</button>
+            <button onClick={() =>
+            {
+                window.location.reload();
+                props.onDelete(props.book.bookId)
+            }} className="my-button">Delete</button>
         </div>
     );
 };
