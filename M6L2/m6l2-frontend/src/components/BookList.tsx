@@ -2,11 +2,11 @@ import React from 'react';
 import { IBook } from '../interfaces/IBook';
 import Book from "./Book";
 
-const BookList = (props: {books: IBook[]}) => {
+const BookList = (props: {books: IBook[], onDelete: any}) => {
     return (
         <div className="flex">
             {props.books.map((book) => (
-                <Book key={book.bookId} book={book}/>
+                <Book onDelete={props.onDelete} key={book.bookId} book={book}/>
             ))}
         </div>
     );

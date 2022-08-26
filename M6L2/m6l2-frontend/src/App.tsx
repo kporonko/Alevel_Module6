@@ -1,8 +1,10 @@
 import React, {useEffect, useState} from 'react';
 import Header from "./components/Header";
 import BookList from "./components/BookList";
-import {GetBooks} from "./fetch";
+import {DeleteBook, GetBooks} from "./fetch";
 import {IBook} from "./interfaces/IBook";
+import {Route, Routes} from "react-router-dom";
+import BookDescription from "./components/BookDescription";
 
 const App = () => {
 
@@ -16,10 +18,22 @@ const App = () => {
         fetchProductsData();
     }, [])
 
+    async function deleteBook(id: number){
+        console.log('id')
+        console.log(id)
+        await DeleteBook(id);
+        window.location.reload();
+    }
+
     return (
         <div>
             <Header/>
-            {books.length > 0 ? <BookList books={books}/> : ''}
+            <Routes>
+                <Route path='/' element={books.length > 0 ? <BookList onDelete={deleteBook} books={books}/> : ''}/>
+                <Route path="/book/:id" element={<BookDescription/>} />
+                <Route path="/addBook" element={<div>add</div>} />
+            </Routes>
+
         </div>
     );
 };
