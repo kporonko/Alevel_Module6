@@ -1,10 +1,30 @@
-version: '3.2'
+version: '3.4'
+
 services:
-  my-app:
+  webfrontend:
+    image: frontend-app:latest
     build:
       context: .
-      dockerfile: 'Dockerfile'
+      dockerfile: m6l2-frontend/Dockerfile
+    depends_on:
+      - mywebapi
     ports:
-      - '3000:80'
-    volumes:
-      - ./:/frontend
+      - "8080:8080"
+
+  mywebapi:
+    image: backend-app:v1
+    build:
+      context: .
+      dockerfile: M6L1BooksAuthors/Dockerfile
+    depends_on: 
+      - sql.data
+    ports:
+      - "8081:8182"
+
+  sql.data:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    environment:
+      - ConnectionString=Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=M6L1BooksAuthors;Integrated Security=True;MultipleActiveResultSets=true
+      - ACCEPT_EULA=Y
+    ports:
+      - "1440:1433"
