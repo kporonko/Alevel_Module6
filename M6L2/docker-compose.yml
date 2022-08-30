@@ -24,7 +24,7 @@ services:
   sql.data:
     image: mcr.microsoft.com/mssql/server:2019-latest
     environment:
-      - ConnectionString=Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=M6L1BooksAuthors;Integrated Security=True;MultipleActiveResultSets=true
+      - ConnectionString=Data Source=localhost\\SQLSERVER;Initial Catalog=M6L1BooksAuthors;Integrated Security=True;MultipleActiveResultSets=true
       - ACCEPT_EULA=Y
     ports:
       - "1440:1433"

@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
-namespace M6L1BooksAuthors.Migrations
+namespace M6L1BooksAuthors.Infrastructure.Migrations
 {
     [DbContext(typeof(ApplicationContext))]
     partial class ApplicationContextModelSnapshot : ModelSnapshot
@@ -22,7 +22,7 @@ namespace M6L1BooksAuthors.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("M6L1BooksAuthors.EntityFramework.Models.Author", b =>
+            modelBuilder.Entity("M6L1BooksAuthors.Infrastructure.EntityFramework.Models.Author", b =>
                 {
                     b.Property<int>("AuthorId")
                         .ValueGeneratedOnAdd()
@@ -52,7 +52,7 @@ namespace M6L1BooksAuthors.Migrations
                     b.ToTable("Author", (string)null);
                 });
 
-            modelBuilder.Entity("M6L1BooksAuthors.EntityFramework.Models.Book", b =>
+            modelBuilder.Entity("M6L1BooksAuthors.Infrastructure.EntityFramework.Models.Book", b =>
                 {
                     b.Property<int>("BookId")
                         .ValueGeneratedOnAdd()
@@ -82,7 +82,7 @@ namespace M6L1BooksAuthors.Migrations
                     b.ToTable("Book", (string)null);
                 });
 
-            modelBuilder.Entity("M6L1BooksAuthors.EntityFramework.Models.BookAuthor", b =>
+            modelBuilder.Entity("M6L1BooksAuthors.Infrastructure.EntityFramework.Models.BookAuthor", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -109,15 +109,15 @@ namespace M6L1BooksAuthors.Migrations
                     b.ToTable("BookAuthor");
                 });
 
-            modelBuilder.Entity("M6L1BooksAuthors.EntityFramework.Models.BookAuthor", b =>
+            modelBuilder.Entity("M6L1BooksAuthors.Infrastructure.EntityFramework.Models.BookAuthor", b =>
                 {
-                    b.HasOne("M6L1BooksAuthors.EntityFramework.Models.Author", "Author")
+                    b.HasOne("M6L1BooksAuthors.Infrastructure.EntityFramework.Models.Author", "Author")
                         .WithMany("BooksAuthors")
                         .HasForeignKey("AuthorId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("M6L1BooksAuthors.EntityFramework.Models.Book", "Book")
+                    b.HasOne("M6L1BooksAuthors.Infrastructure.EntityFramework.Models.Book", "Book")
                         .WithMany("BooksAuthors")
                         .HasForeignKey("BookId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -128,12 +128,12 @@ namespace M6L1BooksAuthors.Migrations
                     b.Navigation("Book");
                 });
 
-            modelBuilder.Entity("M6L1BooksAuthors.EntityFramework.Models.Author", b =>
+            modelBuilder.Entity("M6L1BooksAuthors.Infrastructure.EntityFramework.Models.Author", b =>
                 {
                     b.Navigation("BooksAuthors");
                 });
 
-            modelBuilder.Entity("M6L1BooksAuthors.EntityFramework.Models.Book", b =>
+            modelBuilder.Entity("M6L1BooksAuthors.Infrastructure.EntityFramework.Models.Book", b =>
                 {
                     b.Navigation("BooksAuthors");
                 });
