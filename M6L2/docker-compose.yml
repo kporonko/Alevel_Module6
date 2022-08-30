@@ -2,14 +2,14 @@ version: '3.4'
 
 services:
   webfrontend:
-    image: frontend-app:latest
+    image: sample:prod
     build:
       context: .
       dockerfile: m6l2-frontend/Dockerfile
     depends_on:
       - mywebapi
     ports:
-      - "8080:8080"
+      - "8080:80"
 
   mywebapi:
     image: backend-app:v1
