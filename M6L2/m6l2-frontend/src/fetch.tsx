@@ -35,7 +35,7 @@ export const bookById = async (id: string) => {
         headers: { 'Content-Type': 'application/json' },
     };
 
-    const response = await fetch(`${baseUrl}Books/books/${+id}`, requestOptions);
+    const response = await fetch(`${baseUrl}Books/book/${+id}`, requestOptions);
 
     const body = await response.json();
     console.log(body)
@@ -48,8 +48,7 @@ export const updateBook = async (id: string, title: string, description: string)
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({id: id, title: title, description: description })
     };
-
-    const response = await fetch(`${baseUrl}/Books/book`, requestOptions);
+    const response = await fetch(`${baseUrl}Books/book`, requestOptions);
 }
 
 interface addBookAuthors{

@@ -30,7 +30,7 @@ builder.Services.AddSwaggerGen(c => {
 });
 
 
-builder.Services.AddDbContext<ApplicationContext>(options => options.UseSqlServer("Data Source=localhost\\SQLSERVER;Initial Catalog=M6L1BooksAuthors;Integrated Security=True;MultipleActiveResultSets=true"));
+//builder.Services.AddDbContext<ApplicationContext>(options => options.UseSqlServer("Data Source=localhost\\SQLSERVER;Initial Catalog=M6L1BooksAuthors;Integrated Security=True;MultipleActiveResultSets=true"));
 var app = builder.Build();
 app.UseCors(MyAllowSpecificOrigins);
 

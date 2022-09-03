@@ -6,11 +6,11 @@ namespace M6L1BooksAuthors.Core.Interfaces
 {
     public interface IBookService
     {
-        public Task<List<Book>> GetBooksAsync();
-        public Task<Book> GetBookAsync(int id);
+        public List<Book> GetBooks();
+        public Book GetBook(int id);
         public void AddProduct(BookAdd product);
-        public Task UpdateProductAsync(BookPut product);
-        public Task DeleteProductAsync(BookDelete product);
+        public void UpdateProduct(BookPut product);
+        public void DeleteProduct(BookDelete product);
 
     }
 
