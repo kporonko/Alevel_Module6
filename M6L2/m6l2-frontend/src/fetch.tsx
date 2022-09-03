@@ -1,8 +1,8 @@
 import React from 'react';
 
-
+const baseUrl = 'https://localhost:8182/'
 export const GetBooks = async () => {
-    const response = await fetch('https://localhost:7245/Books/books', {
+    const response = await fetch(`${baseUrl}Books/books`, {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json',
@@ -20,7 +20,7 @@ export const DeleteBook = async (id: number) => {
         body: JSON.stringify({ id: id })
     };
 
-    const response = await fetch('https://localhost:7245/Books/book', requestOptions);
+    const response = await fetch(`${baseUrl}Books/book`, requestOptions);
 
     const body = await response.json();
     console.log(body)
@@ -35,7 +35,7 @@ export const bookById = async (id: string) => {
         headers: { 'Content-Type': 'application/json' },
     };
 
-    const response = await fetch(`https://localhost:7245/Books/book/${+id}`, requestOptions);
+    const response = await fetch(`${baseUrl}Books/books/${+id}`, requestOptions);
 
     const body = await response.json();
     console.log(body)
@@ -49,7 +49,7 @@ export const updateBook = async (id: string, title: string, description: string)
         body: JSON.stringify({id: id, title: title, description: description })
     };
 
-    const response = await fetch(`https://localhost:7245/Books/book`, requestOptions);
+    const response = await fetch(`${baseUrl}/Books/book`, requestOptions);
 }
 
 interface addBookAuthors{
@@ -65,5 +65,5 @@ export const addBook = async (title: string, releaseYear: number, description: s
         body: JSON.stringify({ title: title, description: description, releaseYear: releaseYear, authors : authors})
     };
     console.log(requestOptions.body)
-    const response = await fetch(`https://localhost:7245/Books/book`, requestOptions);
+    const response = await fetch(`${baseUrl}Books/book`, requestOptions);
 }

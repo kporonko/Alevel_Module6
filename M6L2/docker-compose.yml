@@ -19,7 +19,7 @@ services:
     depends_on: 
       - sql.data
     ports:
-      - "8081:8182"
+      - "8182:8182"
 
   sql.data:
     image: mcr.microsoft.com/mssql/server:2019-latest
