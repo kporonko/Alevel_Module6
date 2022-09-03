@@ -10,7 +10,7 @@ namespace M6L1BooksAuthors.Core.Services
     public class BookService : IBookService
     {
         //readonly string dir = Directory.GetParent(Directory.GetCurrentDirectory()).FullName + "\\M6L1BooksAuthors.Infrastructure\\";
-        readonly string dir = "M6L1BooksAuthors.Infrastructure/";
+        readonly string dir = "";
 
         public void AddProduct(BookAdd product)
         {

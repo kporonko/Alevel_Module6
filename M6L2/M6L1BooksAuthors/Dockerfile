@@ -7,6 +7,9 @@ COPY M6L1BooksAuthors.sln ./
 COPY M6L1BooksAuthors/*.csproj ./M6L1BooksAuthors/
 COPY M6L1BooksAuthors.Core/*.csproj ./M6L1BooksAuthors.Core/
 COPY M6L1BooksAuthors.Infrastructure/*.csproj ./M6L1BooksAuthors.Infrastructure/
+COPY M6L1BooksAuthors.Infrastructure/authors.json ./authors.json
+COPY M6L1BooksAuthors.Infrastructure/books.json ./books.json
+COPY M6L1BooksAuthors.Infrastructure/bookAuthors.json ./bookAuthors.json
 
 RUN dotnet restore
 

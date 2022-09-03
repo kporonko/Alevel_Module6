@@ -1,6 +1,6 @@
 import React from 'react';
 
-const baseUrl = 'https://localhost:8182/'
+const baseUrl = 'http://localhost:8182/'
 export const GetBooks = async () => {
     const response = await fetch(`${baseUrl}Books/books`, {
         method: 'GET',
