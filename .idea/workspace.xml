@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3a90403a-960a-4c3c-b91b-c36d0dc15458" name="Changes" comment="Release">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Alevel_Module6.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/M6L1BooksAuthors.rar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/M6L2/M6L1BooksAuthors/M6L1BooksAuthors.Infrastructure/bookAuthors.json" beforeDir="false" afterPath="$PROJECT_DIR$/M6L2/M6L1BooksAuthors/M6L1BooksAuthors.Infrastructure/bookAuthors.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/M6L2/M6L1BooksAuthors/M6L1BooksAuthors.Infrastructure/books.json" beforeDir="false" afterPath="$PROJECT_DIR$/M6L2/M6L1BooksAuthors/M6L1BooksAuthors.Infrastructure/books.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/M6L2/m6l2-frontend/src/components/AddBook.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/M6L2/m6l2-frontend/src/components/AddBook.tsx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2DtODPh8Bxq8QFnjUUhLbVThJXF" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Учеба/A-LEVEL/.NET C#/M6/Alevel_Module6&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\Учеба\\A-LEVEL\\.NET C#\\M6\\Alevel_Module6\\M6L2\\m6l2-frontend\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Учеба\A-LEVEL\.NET C#\M6\Alevel_Module6\M6L2\m6l2-frontend\src\components" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3a90403a-960a-4c3c-b91b-c36d0dc15458" name="Changes" comment="" />
+      <created>1661514793621</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1661514793621</updated>
+      <workItem from="1661514794787" duration="14989000" />
+      <workItem from="1662145505455" duration="1188000" />
+      <workItem from="1662202384806" duration="5727000" />
+      <workItem from="1662214260858" duration="2454000" />
+      <workItem from="1662404152146" duration="638000" />
+    </task>
+    <task id="LOCAL-00001" summary="M6L2 start">
+      <created>1661514833630</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1661514833630</updated>
+    </task>
+    <task id="LOCAL-00002" summary="M6L2 start page is implemented">
+      <created>1661518833756</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1661518833756</updated>
+    </task>
+    <task id="LOCAL-00003" summary="M6L2 update, delete, get are implemented">
+      <created>1661525193643</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1661525193643</updated>
+    </task>
+    <task id="LOCAL-00004" summary="App without db is implemented">
+      <created>1662208431705</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1662208431705</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Release">
+      <created>1662213266761</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1662213266761</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="M6L2 start" />
+    <MESSAGE value="M6L2 start page is implemented" />
+    <MESSAGE value="M6L2 update, delete, get are implemented" />
+    <MESSAGE value="App without db is implemented" />
+    <MESSAGE value="Release" />
+    <option name="LAST_COMMIT_MESSAGE" value="Release" />
+  </component>
+</project>

@@ -34,7 +34,7 @@ const AddBook = () => {
         await addBook(bookDescription.title, bookDescription.releaseYear, bookDescription.description, [{
             firstName: author.firstName, lastName: author.lastName, contribution: bookAuthor.contribution, birthday: author.birthday
         }]);
-        window.location.reload();
+        // window.location.reload();
     }
 
         return (

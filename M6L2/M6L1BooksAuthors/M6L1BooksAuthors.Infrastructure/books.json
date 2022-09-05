@@ -1,1 +1,10 @@
-[{"BookId":45,"Title":"f","ReleaseYear":0,"Description":"fddd","BooksAuthors":[]}]
+[
+  {
+    "BookId": 45,
+    "Title": "stridfffng",
+    "ReleaseYear": 0,
+    "Description": "string",
+    "BooksAuthors": [
+    ]
+  }
+]
