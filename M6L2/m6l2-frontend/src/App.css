@@ -1,0 +1,70 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+body{
+  margin: 20px 60px;
+}
+.header-div{
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.header-div ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  font-size: 20px;
+}
+.header-div ul li {
+  display: inline-block;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.header-div ul li:hover{
+  transform: scale(1.1);
+  transition: all 0.5s ease-in-out;
+}
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+.mycard{
+  max-width: 30%;
+  min-width: 30%;
+}
+.my-button{
+  border: none;
+  border-radius: 30px 30px 0 0 ;
+  background-color: red;
+  color: white;
+}
+.my-button:hover{
+  cursor: pointer;
+  transition: all 1s ease;
+  transform: scaleY(1.1);
+}
+.mycard h2:hover{
+  cursor: pointer;
+}
+.full-desc{
+  max-width: 80%;
+  margin: auto;
+}
+.full-desc div{
+  font-size: 20px;
+  margin: 10px 0;
+  text-align: center;
+}
+.full-desc h2{
+  margin-top: 20px;
+  text-align: center;
+}
+.form-admin label {
+  display: block;
+}

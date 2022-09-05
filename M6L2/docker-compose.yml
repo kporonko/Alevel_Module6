@@ -1,0 +1,30 @@
+version: '3.4'
+
+services:
+  webfrontend:
+    image: sample:prod
+    build:
+      context: .
+      dockerfile: m6l2-frontend/Dockerfile
+    depends_on:
+      - mywebapi
+    ports:
+      - "8080:80"
+
+  mywebapi:
+    image: backend-app:v1
+    build:
+      context: .
+      dockerfile: M6L1BooksAuthors/Dockerfile
+#    depends_on:
+#      - sql.data
+    ports:
+      - "8182:8182"
+
+#  sql.data:
+#    image: mcr.microsoft.com/mssql/server:2019-latest
+#    environment:
+#      - ConnectionString=Data Source=localhost\\SQLSERVER;Initial Catalog=M6L1BooksAuthors;Integrated Security=True;MultipleActiveResultSets=true
+#      - ACCEPT_EULA=Y
+#    ports:
+#      - "1440:1433"
